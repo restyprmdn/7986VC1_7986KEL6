@@ -197,7 +197,7 @@ public class frm_Penghuni extends javax.swing.JFrame {
         btnEdit = new javax.swing.JButton();
         btnHapus = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
-        cbCariPenghuni = new javax.swing.JComboBox<>();
+        cbCariPenghuni = new javax.swing.JComboBox<String>();
         btnCariPenghuni = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         tfNamaPenghuni = new javax.swing.JTextField();
@@ -205,7 +205,7 @@ public class frm_Penghuni extends javax.swing.JFrame {
         tfTempatLahirPenghuni = new javax.swing.JTextField();
         dcTanggalLahirPenghuni = new com.toedter.calendar.JDateChooser();
         jPanel6 = new javax.swing.JPanel();
-        cbGender = new javax.swing.JComboBox<>();
+        cbGender = new javax.swing.JComboBox<String>();
         tfEmail = new javax.swing.JTextField();
         tfNomorKTP = new javax.swing.JTextField();
         tfNomorTelp = new javax.swing.JTextField();
@@ -297,7 +297,7 @@ public class frm_Penghuni extends javax.swing.JFrame {
 
         jPanel4.setLayout(new java.awt.GridLayout(1, 0));
 
-        cbCariPenghuni.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Berdasarkan", "Nama", "No. Kamar", "Gender" }));
+        cbCariPenghuni.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Berdasarkan", "Nama", "No. Kamar", "Gender" }));
         jPanel4.add(cbCariPenghuni);
 
         btnCariPenghuni.setText("Cari");
@@ -312,7 +312,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
 
         jPanel5.setLayout(new java.awt.GridLayout(0, 1, 0, 4));
 
-        tfNamaPenghuni.setText("jTextField1");
         tfNamaPenghuni.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfNamaPenghuniCaretUpdate(evt);
@@ -320,7 +319,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel5.add(tfNamaPenghuni);
 
-        tfAlamatPenghuni.setText("jTextField2");
         tfAlamatPenghuni.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfAlamatPenghuniCaretUpdate(evt);
@@ -328,7 +326,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel5.add(tfAlamatPenghuni);
 
-        tfTempatLahirPenghuni.setText("jTextField3");
         tfTempatLahirPenghuni.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfTempatLahirPenghuniCaretUpdate(evt);
@@ -345,10 +342,9 @@ public class frm_Penghuni extends javax.swing.JFrame {
 
         jPanel6.setLayout(new java.awt.GridLayout(0, 1, 0, 4));
 
-        cbGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Pilih Gender", "Pria", "Wanita", " " }));
+        cbGender.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Pilih Gender", "Pria", "Wanita", " " }));
         jPanel6.add(cbGender);
 
-        tfEmail.setText("jTextField5");
         tfEmail.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfEmailCaretUpdate(evt);
@@ -356,7 +352,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel6.add(tfEmail);
 
-        tfNomorKTP.setText("jTextField6");
         tfNomorKTP.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfNomorKTPCaretUpdate(evt);
@@ -364,7 +359,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel6.add(tfNomorKTP);
 
-        tfNomorTelp.setText("jTextField7");
         tfNomorTelp.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfNomorTelpCaretUpdate(evt);
@@ -372,7 +366,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel6.add(tfNomorTelp);
 
-        tfPekerjaan.setText("jTextField8");
         tfPekerjaan.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfPekerjaanCaretUpdate(evt);
@@ -380,7 +373,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel6.add(tfPekerjaan);
 
-        tfAlamatPekerjaan.setText("jTextField9");
         tfAlamatPekerjaan.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfAlamatPekerjaanCaretUpdate(evt);
@@ -388,7 +380,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         });
         jPanel6.add(tfAlamatPekerjaan);
 
-        tfNomorTelpPekerjaan.setText("jTextField10");
         tfNomorTelpPekerjaan.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfNomorTelpPekerjaanCaretUpdate(evt);
@@ -398,7 +389,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
-        tfPasFoto.setText("jTextField11");
         tfPasFoto.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfPasFotoCaretUpdate(evt);
@@ -413,7 +403,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
-        tfFotoKTP.setText("jTextField12");
         tfFotoKTP.addCaretListener(new javax.swing.event.CaretListener() {
             public void caretUpdate(javax.swing.event.CaretEvent evt) {
                 tfFotoKTPCaretUpdate(evt);
@@ -432,8 +421,6 @@ public class frm_Penghuni extends javax.swing.JFrame {
         panel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, 190, 270));
 
         jPanel7.setLayout(new java.awt.BorderLayout());
-
-        jTextField13.setText("jTextField13");
         jPanel7.add(jTextField13, java.awt.BorderLayout.CENTER);
 
         panel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 130, 230, 30));
@@ -595,6 +582,7 @@ public class frm_Penghuni extends javax.swing.JFrame {
                 tfNomorTelpPekerjaan.setText(o[11].toString());
                 tfPasFoto.setText(o[12].toString());
                 tfFotoKTP.setText(o[13].toString());
+                KunciField(true);
             }
         }catch(SQLException e){
             System.out.println(e.getMessage());
